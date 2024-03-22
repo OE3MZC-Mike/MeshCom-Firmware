@@ -3,6 +3,38 @@ MeshCom is a project to exchange text messages via LORA radio modules. The prima
 
 The technical approach is based on the use of LORA radio modules which transmit messages, positions, measured values, telecontrol and much more with low transmission power over long distances. MeshCom modules can be combined to form a mesh network, but can also be connected to a message network via MeshCom gateways, which are ideally connected via HAMNET. This enables MeshCom radio networks, which are not connected to each other via radio, to communicate with each other.
 
+MeshCom is indeed an exciting project of the Institute of Citizen Science for Space & Wireless communication (www.icssw.org)  aimed at creating a resilient, text-based communication tool for amateur radio operators. It utilizes LORA™ modulation technology and the APRS protocol to establish a mesh network in the 70cm band Amateur band. The main objectives of MeshCom are to realize a roubust off-grid messaging system with low energy consumption and cost-effective hardware. The technical implementation is based on LORA™  radio modules, which can transmit messages, positions, measurements, and more over long distances with low transmit power. MeshCom modules can be connected to form a mesh network or establish a messaging network via MeshCom gateways, ideally connected through HAMNET.
+Basic functions:
+•	Each Node is identified by a Amateur Radio Callsign (with optional SSID)
+•	Short test messages can be sent to ALL (everybody), with ACK from Server/Gateway
+•	Short text messages can be sent DIRECTLY to other Callsign, with End-toEnd Aknowledgement
+•	Some Nodes can als be to configured to act as GATEWAY to HAMNET or INTERNET (wifi)
+•	Each Node should act as a repeater for all other MESHCOM messages on air
+•	Servers and Gateways might have some functionalities to avoid the transmission of redundant trafic
+•	Nodes will automatically send STATUS and POSITION messages
+•	NODES with optional Sensors will send WX-Data or TELEMETRY Data periodically
+•	Messages will be diplayed on small OLED Display or via BT connected smartphone or tablet device or via USB connected serial console
+
+The main goal is to have a selfbuilding and selfhealing Mesh-Network, that can be enhanced by other components of the Amateur Radio Service, like HAMNET (IP-Network), centralised or distributed Meshcom servers. This will increase coverage to all continents and enable interconnection to other modes and services (APRS, WINLINK, DMR, TETRA-SDS, SOTA-WATCH, POCSAG,VARA-AC, …) building an unified communication plattform.
+Particulary useful is Meshcom for Emergency Communication (EMCOM) in case of disaster or Blackout.
+In all usecases terms  and rules of Amateur Radio Service (strictly non commercial, experimental) should be respected.
+This is an open Citizen Science project that should help to promote Amateur Radio Service within academic and society.
+
+Frequency used per Region: 
+EU: 433.175
+UK: tbd
+Nordic: tbd
+USA: 433.175
+Afrika: 433.175
+Asia/Pacific: tbd
+
+Lora parameter:
+SF: 11
+Bandwith: 250kHz
+CR: 4/6
+
+
+
 # MeshCom Protocol
 MeshCom 4.0 uses the APRS PROTOCOL REFERENCE for the source, destination, Digipeater and payload data as defined for APRS. (aprs101.pdf APRS PROTOCOL REFERENCE Version 1.0 2000, Page 12)
 MeshCom 4.0 verwendet für die Payload-Daten das AX.25 Protokoll, wie es für APRS definiert ist. (aprs101.pdf APRS PROTOCOL REFERENCE Version 1.0 2000, Seite 12)
